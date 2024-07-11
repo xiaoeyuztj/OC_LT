@@ -13,7 +13,7 @@ This code base heavily depend on CBDM(https://github.com/qym7/CBDM-pytorch)
 CUDA_VISIBLE_DEVICES=1 python main.py --train --transfer_x0  --transfer_mode t2h  --data_type cifar10lt --num_class 10 --logdir ./logs --cfg --conditional
 ```
 ### Evaluation
-first put the /stats folder from cbdm code base under our folder then run
+first put the /stats folder from CBDM code base under our folder then run
 
 ```
 CUDA_VISIBLE_DEVICES=1 python ddpm_gen.py --eval --ckpt_step xxx --w 1.5 --conditional --cfg --num_class 10 --logdir ./logs
